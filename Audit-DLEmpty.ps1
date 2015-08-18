@@ -1,0 +1,1 @@
+﻿Get-QADGroup -Empty $true -GroupType Distribution | Select Name,Managedby,ParentContainer,CreationDate,whenChanged | Export-Csv C:\scripts\DLlistsEmpty.csv -Force

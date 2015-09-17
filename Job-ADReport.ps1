@@ -21,10 +21,10 @@ Function AddWorksheetHeaders() {
      }
 }
 
-$UserSearchDN = 'dc=amds,dc=advancedmd,dc=com'
-$ComputerSearchDN = 'OU=User Computers,DC=amds,DC=advancedmd,DC=com'
-$ServersSearchDN = 'OU=Servers,dc=amds,dc=advancedmd,dc=com'
-$DCSearchDN = 'OU=Domain Controllers,dc=amds,dc=advancedmd,dc=com'
+$UserSearchDN = 'dc=CONTOSO,dc=CONTOSO,dc=com'
+$ComputerSearchDN = 'OU=User Computers,DC=CONTOSO,DC=CONTOSO,DC=com'
+$ServersSearchDN = 'OU=Servers,dc=CONTOSO,dc=CONTOSO,dc=com'
+$DCSearchDN = 'OU=Domain Controllers,dc=CONTOSO,dc=CONTOSO,dc=com'
 
 $userobjects = Get-ADUser -LDAPFilter "(name=*)" -SearchBase $UserSearchDN -Properties *
 

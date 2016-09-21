@@ -1,4 +1,5 @@
-ynopsis
+<#
+.Synopsis
    Updates ilo3.0 firmware version to latest version supplied. Unless it is below 1.20, you have to update to 1.20 first before updating to latest version
 .Description
    Keep in mind that the find-ilo command relies on the ilo OS responding to its query broadcast, I noticed depending on how the network
